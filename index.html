@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Pseudónimo</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+        
+        * {
+            font-family: 'Montserrat', sans-serif !important;
+            /*Lo pongo aqui, ya que el body no pilla la fuente en cada tag y ademas lo pongo en el '*' para que afecte a toda la web y no tener que ponerlo en cada lado*/
+        }
+
+        body { background-color: #121212; color: white; text-align: center; }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-profile">
+            <h1 style="color: black;">¡Hola, soy Paco!</h1>
+            <img src="avatar.png" alt="Mi Avatar" class="avatar">
+            <p id="name"></p>
+            <p id="email"></p>
+            <p id="aboutMi"></p>
+        </div>
+       <div class="card-form">
+        <form>
+            <div class="form-box">
+                <div class="form-box-inputs">
+                    <label for="name">Nombre:</label>
+                    <input class="input-size" type="text" id="name" name="name" placeholder="Tu pseudónimo" value="Paco Fernandez" required>
+                </div>
+                <div class="form-box-inputs">
+                    <label for="user">Usuario:</label>
+                    <input type="text" id="user" name="user" placeholder="Tu usuario" value="PFernandez" required>
+                </div>
+            </div>
+            <div class="form-box">
+                <div class="form-box-inputs">
+                    <label for="email">Email:</label>
+                    <input  class="input-size" type="email" id="email" name="email" value="pfernandez@ejemplo.com"  placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-box-inputs">
+                    <label for="dni">DNI:</label>
+                    <input type="dni" id="dni" name="dni" value="72593161D"  placeholder="DNI" required>
+                </div>
+            </div>
+           
+            <div class="form-box-inputs">
+                <label for="message" style="text-align: left;">Sobre mí:</label>
+                <textarea id="message" name="message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum blandit justo quis porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec in porta enim. Praesent congue nunc augue, non sollicitudin tellus convallis ac. Donec eget sem eu purus rutrum gravida. Sed hendrerit feugiat dui, maximus porttitor odio euismod eu. Ut at lorem in diam vulputate posuere nec eu sem. Ut non eleifend libero. Donec laoreet ante eu justo congue posuere eu imperdiet odio. Morbi leo augue, malesuada nec ullamcorper id, vulputate eu erat.
+                </textarea>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+       </div>
+    </div>
+</body>
+</html>

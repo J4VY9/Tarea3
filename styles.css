@@ -1,0 +1,43 @@
+@import url('style-card.css'); /*Separar un poco el codigo*/
+
+body {
+    background-color: #ECECEC;
+    color: black;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 30px);
+    align-items: center;
+}
+
+
+h1 {
+    color: #00adb5 !important; /*Se le pone el !inportant porque se le esta dando estilo desde html*/
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid cyan !important; /*no seria necesario ya que no sobrescribe ningun estilo sobrescribiendolo*/
+}
+
+
+textarea {
+    height: 200px;
+    scrollbar-color: #333333 #252525;
+}
+
+button {
+    margin-top: 24px;
+    border-radius: 5px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+button:hover {
+    background-color: #007a85;
+}
